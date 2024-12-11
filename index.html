@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flagloop</title>
+</head>
+<body>
+    <label for="">
+        Enter your City Name: <input type="text" placeholder="Enter your City Name" class="city">
+    </label>
+      <br>
+      <!-- <button onclick="">Check</button> -->
+
+
+
+
+
+        <script>
+
+                let cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar", "Rawalpindi", "kashmir"];
+            
+                let usercity ="Islamabad";
+            
+                isMatched = "no";
+
+                for(let i=0; i < cities.length; i++){
+                    if(usercity == cities[i]){
+                       isMatched = "yes"
+                       break;
+                    }
+                    console.log(cities[i])
+                }
+                if(isMatched == "no"){
+                alert("City did not Match")
+                }else{
+                alert("City Matched")
+                }
+      </script>
+
+
+
+
+
+</body>
+</html>
